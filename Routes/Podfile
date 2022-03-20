@@ -1,8 +1,13 @@
 # Uncomment the next line to define a global platform for your project
-# platform :ios, '9.0'
+source 'git@github.com:tanzhiwen/RouteLibarys.git'
+source 'https://github.com/CocoaPods/Specs.git'
+ platform :ios, '9.0'
 
+use_frameworks!
 target 'Routes' do
 pod 'AFNetworking'
+pod 'MJRefresh'
+pod 'RouteLibarys'
 
   target 'RoutesTests' do
     inherit! :search_paths
